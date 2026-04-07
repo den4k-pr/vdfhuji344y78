@@ -1,0 +1,178 @@
+.popup-overlay {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Додайте це до існуючого CSS */
+.popup-overlay {
+    display: none;
+    /* Приховуємо за замовчуванням */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Клас для відображення */
+.popup-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-content {
+    background: linear-gradient(180deg, #d73b10 0%, #6f1d06 100%);
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 350px;
+}
+
+.popup-overlay .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-family: 'trebuchet ms', geneva, sans-serif;
+    cursor: pointer;
+}
+
+.popup-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin: 0 !important;
+    font-family: 'trebuchet ms', geneva, sans-serif;
+}
+
+.popup-subtitle {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'trebuchet ms', geneva, sans-serif;
+}
+
+.product-name {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-family: 'trebuchet ms', geneva, sans-serif;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.popup-price-new {
+    background-color: #F3E2A8;
+    border-radius: 5px;
+    font-size: 43px;
+    width: 100%;
+    height: 60px;
+    color: #000;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-price-old {
+    background: #272727;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 43px;
+    font-weight: 400;
+    height: 60px;
+    text-decoration: line-through;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 40px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+}
+
+.join-btn2 {
+    width: 100%;
+    padding: 10px;
+    background: #F3E2A8;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'trebuchet ms', geneva, sans-serif;
+    cursor: pointer;
+}
+
+.footer-info {
+    font-size: 12px;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.footer-info p{
+    margin: 0 !important;
+}
+
+.timer-title {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin: 0 !important;
+}
+
+.timer-display {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.timer-block span {
+    background-color: #fff;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.timer-block label {
+    font-size: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+.privacy {
+    font-size: 11px;
+    margin-top: 15px;
+    opacity: 0.8;
+}
