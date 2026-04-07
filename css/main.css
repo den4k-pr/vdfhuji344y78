@@ -2924,12 +2924,23 @@ h2 span {
   .table_2{
     max-width: 100%;
   }
-
+  .accordion{
+    margin-top: 2vw;
+  }
+  .s3{
+    margin-top: 3vw;
+  }
   .accordion .title_block:before{
     width: 0.6vw;
     height: 0.6vw;
+    top: 45%;
+    right: 3%;
   }
 
+  .accordion .title_block{
+    padding: 1.6vw;
+    position: relative;
+  }
   .accordion .title_block .num{
     font-size: 0.7vw;
   }
